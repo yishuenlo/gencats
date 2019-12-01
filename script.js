@@ -78,5 +78,5 @@ function searching(arr, iterate){
     }
 };
 
-tenBtn.addEventListener('click', function () { searching(searchLinks, 2);});
+tenBtn.addEventListener('click', function () { searching(searchLinks, 10);});
 thirtyBtn.addEventListener('click', function () { searching(searchLinks, 30);});
