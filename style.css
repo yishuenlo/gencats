@@ -1,0 +1,48 @@
+html, body, main, h1, button {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color:#37474F;
+    /* background-color: #ECEFF1;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: 'fira sans', arial, san-serif;
+    margin:0  auto;
+}
+
+main {
+    width: 60vh;
+    height: 50vh;
+    margin: 10% auto;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: 3em auto;
+}
+
+button{
+    width: 200px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    background-color: #90A4AE;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+button:hover{
+    background-color: #00BFA5;
+    transition: 400ms ease-in;
+    opacity: 1;
+}
