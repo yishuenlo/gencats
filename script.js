@@ -40,6 +40,11 @@ let searchKeywords = [
     'foldex cat',
     'colorpoint persian cat',
     'japanese bobtail cat'
+    'Maine coon',
+    'Manx cat',
+    'Tonkinese cat'
+    'Toyger cat',
+    'York Chocolate Cat'
 ];
 
 // create a new array of links 
@@ -79,4 +84,4 @@ function searching(arr, iterate){
 };
 
 tenBtn.addEventListener('click', function () { searching(searchLinks, 10);});
-thirtyBtn.addEventListener('click', function () { searching(searchLinks, 30);});
+thirtyBtn.addEventListener('click', function () { searching(searchLinks, 34);});
