@@ -39,12 +39,11 @@ let searchKeywords = [
     'egyptian mau',
     'foldex cat',
     'colorpoint persian cat',
-    'japanese bobtail cat'
+    'japanese bobtail cat',
     'Maine coon',
     'Manx cat',
-    'Tonkinese cat'
-    'Toyger cat',
-    'York Chocolate Cat'
+    'toyger cat',
+    'York chocolate cat'
 ];
 
 // create a new array of links 
