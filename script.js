@@ -2,7 +2,7 @@ const tenBtn = document.querySelector('.ten');
 const thirtyBtn = document.querySelector('.thirty');
 
 // parts to form search links
-let linkFront = 'https://www.bing.com/search?q=';
+let linkFront = 'https://www.bing.com/images/search?q=';
 let linkEnd = '&go=Search&qs=ds&form=QBRE';
 
 // an empty array to store links
@@ -10,6 +10,14 @@ let searchLinks = [];
 
 // keywords for search
 let searchKeywords = [
+    'silly cat',
+    'funny cat',
+    'goofy cat',
+    'cat in small box',
+    'liquid cat',
+    'cat in costume',
+    'funny cat faces',
+    'silly cat faces',
     'abyssinian cat',
     'aegean cat',
     'american curl cat',
