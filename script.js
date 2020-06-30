@@ -1,5 +1,5 @@
-const thirtyBtn = document.querySelector('.thirty');
-const quote = document.querySelector('#quote');
+const thirtyBtn = document.querySelector(".thirty");
+const quote = document.querySelector("#quote");
 
 // keywords for search
 const cats = [
@@ -51,6 +51,7 @@ const animals = [
   "cat",
   "tuxedo cat",
   "black cat",
+  "calico cat",
   "panther",
   "leopard",
   "tiger",
@@ -61,7 +62,7 @@ const animals = [
   "dolphin",
   "giraffe",
   "bear cubs",
-  "fox",
+  "red fox",
   "snow leopard",
   "tabby cat",
   "tiger cubs",
@@ -87,6 +88,18 @@ const animals = [
   "sloth",
 ];
 
+function shuffleArr(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  return arr;
+}
+
+//START generate random quotes
+//quote library
 const dailyQuotes = [
   {
     quote: "Make each day your masterpiece.",
@@ -136,19 +149,16 @@ const dailyQuotes = [
   },
 ];
 
-function getRandomQuote(){
+function getRandomQuote() {
   //generate random index based on dailyQuotes.length
   const index = Math.floor(Math.random() * dailyQuotes.length);
-  return quote.innerHTML = `${dailyQuotes[index].quote} --${dailyQuotes[index].source}`;
+  return (quote.innerHTML = `${dailyQuotes[index].quote} --${dailyQuotes[index].source}`);
 }
 
 getRandomQuote();
+// END generate random quotes
 
-// an empty array to store links
-let searchLinks = animals.map(
-  (keyword) => `https://www.bing.com/images/search?q=silly ${keyword}`
-);
-
+// START tab actions
 // open and closing tabs
 function automateTabs(link) {
   const tab = window.open(link, "_blank");
@@ -159,21 +169,25 @@ function automateTabs(link) {
 }
 
 // function to run open and closing tabs in sequence
-function searching(arr, iterate) {
+function searching(iterate) {
+  //generate randomized link library
+  const searchLinks = shuffleArr(animals).map(
+    (keyword) => `https://www.bing.com/images/search?q=funny ${keyword}`
+  );
+
   // set time lag for subsquent links
   const timelag = 6000;
   // run first link first
-  automateTabs(arr[0]);
+  automateTabs(searchLinks[0]);
 
   //run subsequent links after specific timelag
   for (let i = 1; i < iterate; i++) {
     setTimeout(function () {
-      automateTabs(arr[i]);
+      automateTabs(searchLinks[i]);
     }, timelag * i);
   }
 }
 
 thirtyBtn.addEventListener("click", function () {
-  searching(searchLinks, 34);
+  searching(35);
 });
-
