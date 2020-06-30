@@ -127,6 +127,9 @@ const animals = [
   "monkey",
   "sloth",
   "fennec fox",
+  "elephant",
+  "dolphin",
+  "giraffe"
 ];
 
 // an empty array to store links
