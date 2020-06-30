@@ -55,6 +55,10 @@ const animals = [
   "tiger",
   "lion",
   "leopard cubs",
+  "fennec fox",
+  "elephant",
+  "dolphin",
+  "giraffe",
   "bear cubs",
   "fox",
   "snow leopard",
@@ -80,10 +84,6 @@ const animals = [
   "panda",
   "monkey",
   "sloth",
-  "fennec fox",
-  "elephant",
-  "dolphin",
-  "giraffe"
 ];
 
 // an empty array to store links
