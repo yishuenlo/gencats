@@ -103,8 +103,8 @@ const dailyQuotes = [
     source: "Robert Louis Stevenson",
   },
   {
-    quote: "Your imagination is your preview of life's coming attractions.",
-    source: "Albert Einstein",
+    quote: "Every day brings new choices.",
+    source: "Martha Beck",
   },
   {
     quote:
@@ -113,8 +113,8 @@ const dailyQuotes = [
   },
   {
     quote:
-      "The difference between ordinary and extraordinary is that little extra",
-    source: "Jimmy Johnson",
+      "Give every day the chance to become the most beautiful day of your life.",
+    source: "Mark Twain",
   },
   {
     quote: "If you cannot do great things, do small things in a great way.",
@@ -122,12 +122,17 @@ const dailyQuotes = [
   },
   {
     quote:
-      "Don't worry about failures; worry about the chances you miss when you don't even try.",
-    source: "Jack Canfield",
+      "Nobody can go back and start a new beginning, but anyone can start today and make a new ending.",
+    source: "Maria Robinson",
   },
   {
     quote: "It does not matter how slowly you go as long as you do not stop.",
     source: "Confucius",
+  },
+  {
+    quote:
+      "Success isn’t always about ‘Greatness’, it’s about consistency. Consistent, hard work gains success. Greatness will come.",
+    source: "Dwayne “The Rock” Johnson",
   },
 ];
 
