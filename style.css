@@ -27,7 +27,6 @@ main {
   flex-direction: column;
   align-items: flex-start;
   border-radius: 50px;
-  
 }
 
 h1 {
@@ -59,7 +58,7 @@ button {
 
 button:hover {
   color: white;
-  transition: 400ms ease-in;
-  opacity: 1;
-  box-shadow: 11px 11px 22px #272727, -11px -11px 22px #373939;
+  border: 1px solid white;
+  transition: 300ms ease-in;
+  box-shadow: 5px 5px 20px #171818, -5px -5px 20px #474848;
 }
