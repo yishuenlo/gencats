@@ -1,48 +1,65 @@
-html, body, main, h1, button {
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;600&display=swap");
+
+html,
+body,
+main,
+h1,
+button {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    color:#37474F;
-    /* background-color: #ECEFF1;
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
-    font-family: 'fira sans', arial, san-serif;
-    margin:0  auto;
+body {
+  color: #e6e0d3;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0 auto;
+  background-color: #2f3030;
+  background-image: url("img/background-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
-    width: 60vh;
-    height: 50vh;
-    margin: 10% auto;
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 300px;
+  margin: 10% auto 0 auto;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 50px;
+  
 }
 
-h1{
-    text-align: center;
-    margin: 3em auto;
+h1 {
+  color: white;
+  text-align: left;
+  line-height: 1.25em;
+  margin: 0.5em auto;
 }
 
-button{
-    width: 200px;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    background-color: #90A4AE;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-bottom: 1em;
+p {
+  font-weight: 200;
+  margin-bottom: 3em;
 }
 
-button:hover{
-    background-color: #00BFA5;
-    transition: 400ms ease-in;
-    opacity: 1;
+button {
+  width: 200px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #e6e0d3;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 1em;
+  border-radius: 50px;
+  background: #e6e0d3;
+  background: #2f3030;
+  border: 1px solid #e6e0d3;
+  box-shadow: 8px 8px 16px #272727, -8px -8px 16px #373939;
+}
+
+button:hover {
+  color: white;
+  transition: 400ms ease-in;
+  opacity: 1;
+  box-shadow: 11px 11px 22px #272727, -11px -11px 22px #373939;
 }

@@ -1,8 +1,7 @@
-const tenBtn = document.querySelector(".ten");
 const thirtyBtn = document.querySelector(".thirty");
 
 // keywords for search
-let searchKeywords = [
+const cats = [
   "silly cat",
   "funny cat",
   "goofy cat",
@@ -47,9 +46,46 @@ let searchKeywords = [
   "York chocolate cat",
 ];
 
+const animals = [
+  "cat",
+  "tuxedo cat",
+  "black cat",
+  "panther",
+  "leopard",
+  "tiger",
+  "lion",
+  "leopard cubs",
+  "bear cubs",
+  "fox",
+  "snow leopard",
+  "tabby cat",
+  "tiger cubs",
+  "kangaroo",
+  "koala",
+  "husky",
+  "golden retriever",
+  "corgi",
+  "puppies",
+  "kittens",
+  "jaguar",
+  "polar bear",
+  "penguins",
+  "wolf",
+  "border collie",
+  "red panda",
+  "rabbits",
+  "deer",
+  "cheetah",
+  "hedgehog",
+  "panda",
+  "monkey",
+  "sloth",
+  "fennec fox",
+];
+
 // an empty array to store links
-let searchLinks = searchKeywords.map(
-  (keyword) => `https://www.bing.com/images/search?q=${keyword}`
+let searchLinks = animals.map(
+  (keyword) => `https://www.bing.com/images/search?q=silly ${keyword}`
 );
 
 // open and closing tabs
@@ -76,9 +112,6 @@ function searching(arr, iterate) {
   }
 }
 
-tenBtn.addEventListener("click", function () {
-  searching(searchLinks, 2);
-});
 thirtyBtn.addEventListener("click", function () {
   searching(searchLinks, 34);
 });
