@@ -1,4 +1,5 @@
 const thirtyBtn = document.querySelector('.thirty');
+const quote = document.querySelector('#quote');
 
 // keywords for search
 const cats = [
@@ -85,6 +86,58 @@ const animals = [
   "monkey",
   "sloth",
 ];
+
+const dailyQuotes = [
+  {
+    quote: "Make each day your masterpiece.",
+    source: "John Wooden",
+  },
+  {
+    quote:
+      "Just one small positive thought in the morning can change your whole day.",
+    source: "Dalai Lama",
+  },
+  {
+    quote:
+      "Don’t judge each day by the harvest you reap but by the seeds that you plant.",
+    source: "Robert Louis Stevenson",
+  },
+  {
+    quote: "Your imagination is your preview of life's coming attractions.",
+    source: "Albert Einstein",
+  },
+  {
+    quote:
+      "Your time is limited, so don't waste it living someone else's life.",
+    source: "Steve Jobs",
+  },
+  {
+    quote:
+      "The difference between ordinary and extraordinary is that little extra",
+    source: "Jimmy Johnson",
+  },
+  {
+    quote: "If you cannot do great things, do small things in a great way.",
+    source: "Napoleon Hill",
+  },
+  {
+    quote:
+      "Don't worry about failures; worry about the chances you miss when you don't even try.",
+    source: "Jack Canfield",
+  },
+  {
+    quote: "It does not matter how slowly you go as long as you do not stop.",
+    source: "Confucius",
+  },
+];
+
+function getRandomQuote(){
+  //generate random index based on dailyQuotes.length
+  const index = Math.floor(Math.random() * dailyQuotes.length);
+  return quote.innerHTML = `${dailyQuotes[index].quote} --${dailyQuotes[index].source}`;
+}
+
+getRandomQuote();
 
 // an empty array to store links
 let searchLinks = animals.map(
