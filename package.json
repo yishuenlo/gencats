@@ -1,0 +1,23 @@
+{
+  "name": "dailygen",
+  "version": "1.0.0",
+  "description": "daily searches",
+  "main": "node.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yishuenlo/gencats.git"
+  },
+  "author": "Yishuen Lo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yishuenlo/gencats/issues"
+  },
+  "homepage": "https://github.com/yishuenlo/gencats#readme",
+  "dependencies": {
+    "google-trends-api": "^4.9.0",
+    "nodemon": "^2.0.4"
+  }
+}
