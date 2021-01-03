@@ -165,7 +165,7 @@ function automateTabs(link) {
   // close tab after 5000ms
   setTimeout(function () {
     tab.close();
-  }, 5000);
+  }, 10000);
 }
 
 // function to run open and closing tabs in sequence
@@ -176,7 +176,7 @@ function searching(iterate) {
   );
 
   // set time lag for subsquent links
-  const timelag = 6000;
+  const timelag = 8500;
   // run first link first
   automateTabs(searchLinks[0]);
 
@@ -189,5 +189,5 @@ function searching(iterate) {
 }
 
 thirtyBtn.addEventListener("click", function () {
-  searching(35);
+  searching(40);
 });
