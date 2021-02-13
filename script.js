@@ -56,23 +56,18 @@ const animals = [
   "leopard",
   "tiger",
   "lion",
-  "leopard cubs",
   "fennec fox",
   "elephant",
-  "dolphin",
   "giraffe",
   "bear cubs",
   "red fox",
   "snow leopard",
   "tabby cat",
-  "tiger cubs",
   "kangaroo",
   "koala",
   "husky",
   "golden retriever",
   "corgi",
-  "puppies",
-  "kittens",
   "jaguar",
   "polar bear",
   "penguins",
@@ -84,8 +79,25 @@ const animals = [
   "cheetah",
   "hedgehog",
   "panda",
-  "monkey",
-  "sloth",
+  "arctic fox",
+  "Capybara",
+  "Patagonian mara",
+  "Numbat",
+  "Mangalitsa",
+  "Margay",
+  "Tarsier",
+  "pika",
+  "Quoll",
+  "Quokka",
+  "Klipspringer",
+  "Japanese weasel",
+  "Long-eared jerboa",
+  "Japanese dwarf flying squirrel",
+  "Sea otters",
+  "hummingbirds",
+  "Sea turtles",
+  "Black-footed cats",
+  "American mink",
 ];
 
 function shuffleArr(arr) {
@@ -170,9 +182,10 @@ function automateTabs(link) {
 
 // function to run open and closing tabs in sequence
 function searching(iterate) {
+
   //generate randomized link library
   const searchLinks = shuffleArr(animals).map(
-    (keyword) => `https://www.bing.com/images/search?q=funny ${keyword}`
+    (keyword) => `https://www.bing.com/images/search?q=baby ${keyword}`
   );
 
   // set time lag for subsquent links
