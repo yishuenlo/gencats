@@ -159,6 +159,41 @@ const dailyQuotes = [
       "Success isn’t always about ‘Greatness’, it’s about consistency. Consistent, hard work gains success. Greatness will come.",
     source: "Dwayne “The Rock” Johnson",
   },
+  {
+    quote:
+      "Never let the odds keep you from doing what you know in your heart you were meant to do.",
+    source: "Unknown",
+  },
+  {
+    quote:
+      "The struggle you’re in today is developing the strength you need for tomorrow. Don’t give up.",
+    source: "Unknown",
+  },
+  {
+    quote:
+      "You have to fight through some bad days to earn the best days of your life.",
+    source: "Unknown",
+  },
+  {
+    quote:
+      "Trust yourself. You know more than you think you do.",
+    source: "Unknown",
+  },
+  {
+    quote:
+      "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.",
+    source: "Unknown",
+  },
+  {
+    quote:
+      "Being challenged in life is inevitable, being defeated is optional.",
+    source: "Unknown",
+  },
+  {
+    quote:
+      "Beginning is easy, continuing is hard.",
+    source: "Unknown",
+  },
 ];
 
 function getRandomQuote() {
