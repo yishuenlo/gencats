@@ -255,5 +255,5 @@ function searching(iterate) {
 }
 
 thirtyBtn.addEventListener("click", function () {
-  searching(40);
+  searching(55);
 });
