@@ -1,4 +1,4 @@
-const thirtyBtn = document.querySelector(".thirty");
+const searchBtn = document.querySelector(".search-btn");
 const quote = document.querySelector("#quote");
 
 // keywords for search
@@ -59,7 +59,6 @@ const animals = [
   "fennec fox",
   "elephant",
   "giraffe",
-  "bear cubs",
   "red fox",
   "snow leopard",
   "tabby cat",
@@ -97,10 +96,10 @@ const animals = [
   "Sea turtles",
   "Black-footed cats",
   "American mink",
-  "Racoon",
-  "Possum",
-  "Chipmunk",
-  "Squirrel",
+  "raccoon",
+  "possum",
+  "chipmunk",
+  "squirrel",
   "owl",
   "yoda",
   "coyote",
@@ -254,6 +253,6 @@ function searching(iterate) {
   }
 }
 
-thirtyBtn.addEventListener("click", function () {
+searchBtn.addEventListener("click", function () {
   searching(55);
 });
