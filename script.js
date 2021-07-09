@@ -109,7 +109,7 @@ const animals = [
   "pine marten",
   "formosan black bear",
   "crab-eating mongoose",
-  "otter", 
+  "otter",
   "chinese ferret badger",
   "yellow-throated marten",
   "sambar deer",
@@ -192,8 +192,7 @@ const dailyQuotes = [
     source: "Unknown",
   },
   {
-    quote:
-      "Trust yourself. You know more than you think you do.",
+    quote: "Trust yourself. You know more than you think you do.",
     source: "Unknown",
   },
   {
@@ -207,8 +206,7 @@ const dailyQuotes = [
     source: "Unknown",
   },
   {
-    quote:
-      "Beginning is easy, continuing is hard.",
+    quote: "Beginning is easy, continuing is hard.",
     source: "Unknown",
   },
 ];
@@ -226,33 +224,31 @@ getRandomQuote();
 // open and closing tabs
 function automateTabs(link) {
   const tab = window.open(link, "_blank");
-  // close tab after 5000ms
+  // close tab after 10sec
   setTimeout(function () {
     tab.close();
   }, 10000);
 }
 
 // function to run open and closing tabs in sequence
-function searching(iterate) {
-
+function searching(iteration) {
   //generate randomized link library
   const searchLinks = shuffleArr(animals).map(
     (keyword) => `https://www.bing.com/images/search?q=baby ${keyword}`
   );
 
+  // run first link first
+  // automateTabs(searchLinks[0]);
+
   // set time lag for subsquent links
   const timelag = 8500;
-  // run first link first
-  automateTabs(searchLinks[0]);
 
   //run subsequent links after specific timelag
-  for (let i = 1; i < iterate; i++) {
+  for (let i = 0; i < iteration; i++) {
     setTimeout(function () {
       automateTabs(searchLinks[i]);
     }, timelag * i);
   }
 }
 
-searchBtn.addEventListener("click", function () {
-  searching(55);
-});
+searchBtn.addEventListener("click", (f) => searching(55));
